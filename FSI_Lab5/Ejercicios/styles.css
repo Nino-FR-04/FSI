@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Fondo verde agua muy suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff; /* Fondo blanco puro para el contenedor */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #00796b; /* Verde agua más oscuro */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+    color: #00796b; /* Verde agua más oscuro */
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #80deea; /* Borde verde agua claro */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #00796b; /* Verde agua más oscuro en foco */
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5); /* Sombra de enfoque */
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4db6ac; /* Verde agua brillante suave */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #26a69a; /* Verde agua un poco más oscuro en hover */
+    transform: translateY(-2px);
+}
+
+.resumen {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #b2ebf2; /* Fondo verde agua suave */
+    border: 1px solid #80deea; /* Borde verde agua claro */
+    border-radius: 10px;
+    display: none; /* Inicialmente oculto */
+    color: #004d40; /* Texto en verde agua oscuro */
+    text-align: left;
+}
+
+.resumen h2 {
+    font-size: 20px;
+    color: #00796b; /* Verde agua oscuro para el título del resumen */
+    margin-bottom: 10px;
+}
+
+.resumen p {
+    margin: 5px 0; /* Margen entre párrafos */
+}
+

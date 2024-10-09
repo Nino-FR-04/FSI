@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f5; /* Fondo suave */
+}
+
+.calculadora {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más suave y pronunciada */
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.calculadora:hover {
+    transform: scale(1.02); /* Pequeño aumento al pasar el ratón por encima */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    text-align: right;
+    border-radius: 15px;
+    border: 2px solid #ddd;
+    background-color: #f4f4f9;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de escala más notable */
+    box-shadow: 0 7px 20px rgba(0, 86, 179, 0.4); /* Sombra más pronunciada al pasar el ratón */
+}
+
+button:active {
+    background-color: #003f7f;
+    transform: scale(0.95); /* Efecto de "pulsación" al hacer clic */
+    box-shadow: 0 4px 12px rgba(0, 63, 127, 0.4);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:focus-visible {
+    outline: 2px solid #0056b3; /* Mejor accesibilidad */
+}
+
+
